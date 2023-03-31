@@ -7,7 +7,7 @@ def process_rss_feeds(rss_urls, sort_by='date'):
     articles = []
     # Create a progress indicator:
     how_many = len(rss_urls)
-    feeds_progressed = 0
+    feeds_progressed = 1
 
     # Loop through each RSS URL and fetch the feed
     for rss_url in rss_urls:
@@ -54,16 +54,16 @@ rss_urls = [
     "http://feeds.marketwatch.com/marketwatch/realtimeheadlines/",
     "http://feeds.marketwatch.com/marketwatch/bulletins/",
     "https://biztoc.com/feed",
+    "https://hnrss.org/frontpage",
+    "https://hnrss.org/newest",
     # Add more RSS URLs here
 ]
 
-# rss_urls = get_rssFeeds.get_rss_feeds('https://www.billdietrich.me/feedlist.html')
-# print(rss_urls)
-# Get and sort articles by date (default)
 articles_by_date = process_rss_feeds(rss_urls)
 
-# Display the sorted articles
-print("Articles sorted by date:")
-for article in articles_by_date:
-    print(article['title'], "-", article['publication'], "-", article['date'])
+with open('rss_results.txt', 'w', encoding='utf-8') as f:
+    # Display the sorted articles
+    for article in articles_by_date:
+        print(article['title'], "-", article['publication'], "-", article['date'])
+        f.write(f"{article['title']}\n")
 
