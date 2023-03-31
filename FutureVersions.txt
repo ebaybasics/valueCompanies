@@ -1,0 +1,9 @@
+Desired Features:
+
+1) Sentiment Analysis:
+
+We want to be able to rank companies based off of different sentiment characteristics and use that to help decide which companies are the best
+
+2) Macro Economic Analysis
+
+We want to be able to determine how macroeconomic events effect our stock

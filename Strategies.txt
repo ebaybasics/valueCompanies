@@ -1,0 +1,26 @@
+Some strategies for using this program:
+
+1) Rebound Strategy:
+
+When a sector is down heavy based off of macroeconomic events, or
+based off an unrelated companies bad news, we can use this to identify the
+best companies in a sector
+
+2) Best Company:
+
+Similar to the rebound strategy, we use this to identify best companies in sector for whatever reason we have
+
+3) Chart Setups:
+
+We can use finviz to identify stocks that have the ideal chart setup. Then we can use stock rover to add them to a watchlist and get relavant table data for them. This way we are getting into a company that has the best fundamentals and the best chart setup
+
+4) Earnings:
+
+Lots of ways to play this.
+
+a)Buy into the best company a couple of weeks before earnings for a short trade
+b)Buy options in companies not expected to do well but have a good financial histroy
+
+5) Smallcaps and smaller:
+
+Find the companies that the big guys dont play, less liquidity and try to have an edge
