@@ -1,6 +1,8 @@
 import feedparser
 from operator import itemgetter
 import get_rssFeeds
+import sentiment_analysis
+import rss_feeds
 
 def process_rss_feeds(rss_urls, sort_by='date'):
     # Initialize an empty list to store articles
@@ -49,21 +51,22 @@ def process_rss_feeds(rss_urls, sort_by='date'):
 
     return articles
 
-# Example usage
-rss_urls = [
-    "http://feeds.marketwatch.com/marketwatch/realtimeheadlines/",
-    "http://feeds.marketwatch.com/marketwatch/bulletins/",
-    "https://biztoc.com/feed",
-    "https://hnrss.org/frontpage",
-    "https://hnrss.org/newest",
-    # Add more RSS URLs here
-]
 
-articles_by_date = process_rss_feeds(rss_urls)
+# variable linked to rss_feeds.py
+general_news_urls = rss_feeds.general_news_urls
 
-with open('rss_results.txt', 'w', encoding='utf-8') as f:
-    # Display the sorted articles
-    for article in articles_by_date:
-        print(article['title'], "-", article['publication'], "-", article['date'])
-        f.write(f"{article['title']}\n")
+# Get Rss feed data from urls provided and create a file named after the rss_feed categories
+def get_rss_data(rss_urls=general_news_urls, rss_lst_names='general_news_urls'):
+    articles_by_date = process_rss_feeds(rss_urls)
+    with open(f'{str(rss_lst_names)}.txt', 'w', encoding='utf-8') as f:
+        # Display the sorted articles
+        for article in articles_by_date:
+            print(article['title'], "-", article['publication'], "-", article['date'])
+            f.write(f"{article['title']}\n")
+        return f'{str(rss_lst_names)}.txt'
 
+
+
+
+# Running our sent. Analysis. We can now run as many as we want and change the file names to get more specific news for what we are interested in
+sentiment_analysis.run_sentiment(get_rss_data(general_news_urls, 'general_news_urls'))
