@@ -24,3 +24,10 @@ b)Buy options in companies not expected to do well but have a good financial his
 5) Smallcaps and smaller:
 
 Find the companies that the big guys dont play, less liquidity and try to have an edge
+
+6) BlackFlag Strategy:
+
+a) See fear headline that is effecting overall market
+b) Use a heat map to see which sector/industry is getting hit the hardest
+c) (optional) Run a blackflag screen on the sector/ industry to find those companies trading near support
+d) run fundamental scoring on the list of companies to find the ones most likely to rebound quickly
