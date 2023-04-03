@@ -81,4 +81,4 @@ def get_rss_data(rss_urls=general_news_urls, rss_lst_names='general_news_urls'):
 # Running our sent. Analysis. We can now run as many as we want and change the file names to get more specific news for what we are interested in
 # sentiment_analysis.run_sentiment(get_rss_data(general_news_urls, 'general_news_urls'))
 
-sentiment_analysis.run_sentiment(get_rss_data(rss_feeds.seekingAlpha, 'general_news_urls'))
+sentiment_analysis.run_sentiment(get_rss_data(rss_feeds.general_news_urls, 'general_news_urls'))

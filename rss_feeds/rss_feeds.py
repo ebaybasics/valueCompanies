@@ -23,3 +23,18 @@ seekingAlpha = [
     'https://seekingalpha.com/listing/most-popular-articles.xml',
     'https://seekingalpha.com/tag/editors-picks.xml',
 ]
+
+marketwatch = [
+    "http://feeds.marketwatch.com/marketwatch/topstories/",
+    "http://feeds.marketwatch.com/marketwatch/bulletins",
+    "http://feeds.marketwatch.com/marketwatch/commentary/",
+
+]
+
+feedspot = [
+    "https://www.investing.com/rss/news.rss"
+]
+
+custom_twitter = [
+    "https://rss.app/feeds/FlkYawSaT5aiw41a.xml",
+]

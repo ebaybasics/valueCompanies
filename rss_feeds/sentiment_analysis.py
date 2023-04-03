@@ -54,7 +54,7 @@ def generate_treemap(text, omit_words=None, top_n=15):
 
 
 def run_sentiment(rss_data='rss_results.txt'):
-    omit = ['How', 'New', 'first', 'A', 'In', 'US', 'Fox', 'The', '&', 'News', 'quarter', 'Why', 'Can', 'says', 'May', 'U.S.', 'Is', 'For', 'After', "To", "Will", "HN:", "And", "Are", "Who", "Of", "new", "More", "This", "best", "That", ":", "From", "Its", "Has", "–", "Up", "Be", "case", "3", "I", "On", "next", "trial", "since", "First", "Could", "Ahead", "His", "Due", "Do", "Not", "Just", "Get", "‘The", "It", "2020", "2022", "Keep", "using", "4", "—", "With", "2", "Go", "About", "may", "Here's", "What", "You", "At", "500", "Among", "2023", "He", "Today", "keep",]
+    omit = ['How', 'New', 'first', 'A', 'In', 'US', 'Fox', 'The', '&', 'News', 'quarter', 'Why', 'Can', 'says', 'May', 'U.S.', 'Is', 'For', 'After', "To", "Will", "HN:", "And", "Are", "Who", "Of", "new", "More", "This", "best", "That", ":", "From", "Its", "Has", "–", "Up", "Be", "case", "3", "I", "On", "next", "trial", "since", "First", "Could", "Ahead", "His", "Due", "Do", "Not", "Just", "Get", "‘The", "It", "2020", "2022", "Keep", "using", "4", "—", "With", "2", "Go", "About", "may", "Here's", "What", "You", "At", "500", "Among", "2023", "He", "Today", "keep", "What's", "poised", "Streaming:"]
 
     with open(rss_data, encoding='utf-8') as f:
         text = f.read()
